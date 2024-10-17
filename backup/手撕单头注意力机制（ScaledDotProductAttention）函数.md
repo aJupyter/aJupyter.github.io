@@ -1,12 +1,11 @@
 # 手撕单头注意力机制（ScaledDotProductAttention）函数
 输入是query和 key-value，注意力机制首先计算query与每个key的关联性（compatibility），每个关联性作为每个value的权重（weight），各个权重与value的乘积相加得到输出。
-![image](https://github.com/user-attachments/assets/bfcfff4c-1ce3-411f-a012-8cfe59263dab)
+![image](https://github.com/user-attachments/assets/70d11f21-5f1e-4990-8422-28f21b7fa25b)
 1. 为什么要缩放：
 如果不对softmax的输入做缩放，那么万一输入的数量级很大，softmax的梯度就会趋向于0，导致梯度消失。
 2. attention mask的机制
 attention mask 有效的标记为1，无效的标记为0，之后与attention score矩阵相加 1的地方不变 0的地方会加一个非常大的负数 从而利用softmax(负数)无限趋近于0的特点，避免padding的token的影响
 3. k.transpose(1, 2)或者torch.transpose(a, 1, 0)不是原地操作
-![image](https://github.com/user-attachments/assets/5db34689-e7b7-4de9-941a-95fd9e05d544)
 4. transpose() 和 permute()
  1.都是返回转置后矩阵。
  2.都可以操作高纬矩阵，permute在高维的功能性更强。
