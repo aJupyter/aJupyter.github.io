@@ -1,107 +1,49 @@
 <div align="center">
 
-# Luka Homepage
+# aJupyter's Homepage
 
-### A warm, minimal, responsive homepage template for researchers, students, builders, and creators.
+### Graduate Student @ Nankai University | LLM · MLLM · Agentic System
 
-[中文说明](README.zh-CN.md) · [Live Demo](https://wzsyyh.github.io/luka-homepage-template/) · [Use This Template](https://github.com/wzsyyh/luka-homepage-template/generate)
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-c2714f?style=flat-square)](https://wzsyyh.github.io/luka-homepage-template/)
-[![Template Ready](https://img.shields.io/badge/Template-Ready-3d3929?style=flat-square)](https://github.com/wzsyyh/luka-homepage-template/generate)
-[![Stack](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS-e28a67?style=flat-square)](https://github.com/wzsyyh/luka-homepage-template)
-[![License](https://img.shields.io/badge/License-MIT-8c8577?style=flat-square)](./LICENSE.md)
+[中文介绍](README.zh-CN.md) · [Homepage](https://ajupyter.github.io/) · [GitHub](https://github.com/aJupyter)
 
 </div>
 
-`Luka Homepage` is a standalone template version extracted from my own personal homepage. It is designed to feel warm, clean, and academic without adding any build tooling or framework overhead.
+---
 
-## Why This Template
+## About Me
 
-- Minimal but not plain: clean typography, warm colors, and balanced spacing.
-- Academic-ready layout: built for homepage content, not generic portfolio blocks.
-- Static by default: deploy directly to GitHub Pages with zero build steps.
-- Easy to fork: replace a few text blocks and assets, then publish.
-- Mobile-friendly: desktop and phone layouts are already tuned.
+Hello! I'm aJupyter (xunzhi), a graduate student at **Nankai University (NKU)**.
 
-## What You Get
+- **Research Interests**: Large Language Models (LLM), Multimodal Large Language Models (MLLM), and Agentic Systems.
+- **Content Creator**: High-quality content creator in the field of Artificial Intelligence on [CSDN](https://blog.csdn.net/qq_49821869).
+- **Hobbies**: Running, playing badminton, taking walks, watching movies.
+- **Contact**: ajupyter@163.com
 
-| Section | Included |
-| --- | --- |
-| Personal intro | `About Me`, avatar, email, social links |
-| Academic timeline | `Education`, `Experience` |
-| Showcase | `Projects`, `Publications`, `Awards` |
-| UX details | Dark mode toggle, smooth entrance animation, responsive layout |
-| Replaceable assets | Avatar, institution logo, favicon, CV link |
+## Open Source
 
-## Quick Start
+| Project | Description | Role |
+| --- | --- | --- |
+| [EmoLLM](https://github.com/SmartFlowAI/EmoLLM) | LLM series for mental health counseling | Sponsor |
+| [ThinkLLM](https://github.com/aJupyter/ThinkLLM) | Algorithms and component implementation of LLMs | Sponsor |
+| [xtuner](https://github.com/InternLM/xtuner) | Efficient fine-tuning toolkit for LLMs | Member |
+| [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG) | Python toolkit for efficient RAG research | Member |
+| [llms-from-scratch-cn](https://github.com/datawhalechina/llms-from-scratch-cn) | Chinese version of LLMs From Scratch | Member |
+| [LLM-Dojo](https://github.com/mst272/LLM-Dojo) | Open source large model training framework | Member |
+| [Math-Multi-Agent](https://github.com/isaacJinyu/Math-Multi-Agent) | 2nd place in Ali Global Maths Competition 2024 (AI track) | Member |
+| [Tianji](https://github.com/SocialAI-tianji/Tianji) | Fine-tuned LLM for worldly wisdom and emotional intelligence | Member |
+| [Awesome-LLM-paper](https://github.com/aJupyter/Awesome-LLM-paper) | Curated LLM paper collection | Sponsor |
 
-### 1. Create your own copy
+## Honors
 
-Use GitHub's [Use This Template](https://github.com/wzsyyh/luka-homepage-template/generate) button, or copy this folder into a new repository.
+- **[2024.6]** 2nd place worldwide in the AI track of the Alibaba Global Mathematics Competition
+- **[2024.3]** Top 15 + Creative Application Award, Shusheng·Puyu Large Model Challenge
+- **[2024.1-5]** Excellent camper & teaching assistant, Shusheng·Puyu Large Model Practical Camp
+- **[2022.9]** Master's recommended-exempt student, outstanding undergraduate graduate, ranked 1st/69 in major
 
-Suggested repository names:
+## Links
 
-- `luka-homepage`
-- `luka-homepage-template`
-- `luka-academic-homepage`
-
-### 2. Customize the content
-
-You will mainly edit:
-
-- `index.html` for all main content
-- `assets/css/theme-luka.css` for colors, spacing, and layout
-- `assets/img/avatar.svg` for the profile image
-- `assets/img/institution.svg` for school or lab branding
-
-### 3. Replace your assets
-
-- Avatar: replace `assets/img/avatar.svg` with your own `png`, `jpg`, or `svg`
-- Institution logo: replace `assets/img/institution.svg`
-- Favicon: replace `assets/img/favicon.svg`
-- Resume: update the `Download my CV` link in `index.html`
-
-### 4. Deploy to GitHub Pages
-
-1. Open repository `Settings`
-2. Go to `Pages`
-3. Choose `Deploy from a branch`
-4. Select `main` and `/ (root)`
-5. Save and wait for deployment
-
-## Project Structure
-
-```text
-.
-├── index.html
-├── README.md
-├── README.zh-CN.md
-├── LICENSE.md
-└── assets
-    ├── css
-    │   ├── font_sans_serif.css
-    │   └── theme-luka.css
-    ├── cv
-    ├── img
-    └── js
-        └── scale.fix.js
-```
-
-## Design Notes
-
-- The left sidebar stays top-aligned, matching the original personal homepage layout.
-- The visual language is intentionally warm and understated rather than highly decorative.
-- The template keeps just enough structure for academic use while remaining easy to personalize.
-
-## Attribution
-
-The footer includes two lines by default:
-
-1. Your own site copyright
-2. `Luka Homepage Template by Yuheng Yang`
-
-If you want to preserve template attribution, keep the second line.
-
-## License
-
-This template includes its own `LICENSE.md`, so you can publish it as an independent repository immediately.
+- [Blog (CSDN)](https://blog.csdn.net/qq_49821869)
+- [Bilibili](https://space.bilibili.com/474355405)
+- [Zhihu](https://www.zhihu.com/people/grit-35-86)
+- [Yuque](https://www.yuque.com/ajupyter)
+- [GitHub](https://github.com/aJupyter)
