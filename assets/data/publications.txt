@@ -1,0 +1,51 @@
+@article{wang2025ubench,
+  title={UBench: Benchmarking Uncertainty in Large Language Models with Multiple Choice Questions},
+  author={Wang, Xunzhi and Zhang, Zhuowei and Chen, Gaonan and Li, Qiongyu and Luo, Bitong and Han, Zhixin and Wang, Haotian and Gao, Hang and Hu, Mengting},
+  journal={Findings of the Association for Computational Linguistics: ACL 2025},
+  pages={8076--8107},
+  year={2025}
+}
+
+
+@inproceedings{han2025deqa,
+  title={Deqa: Descriptions enhanced question-answering framework for multimodal aspect-based sentiment analysis},
+  author={Han, Zhixin and Hu, Mengting and Bai, Yinhao and Wang, Xunzhi and Luo, Bitong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={22},
+  pages={23987--23995},
+  year={2025}
+}
+
+@misc{team2024emollm,
+  title={EmoLLM: Reinventing Mental Health Support with Large Language Models},
+  author={Team, EmoLLM},
+  journal={https://github.com/SmartFlowAI/EmoLLM},
+  url={https://github.com/SmartFlowAI/EmoLLM},
+  year={2024}
+}
+
+@inproceedings{liang2024controlled,
+  title={Controlled text generation for large language model with dynamic attribute graphs},
+  author={Liang, Xun and Wang, Hanyu and Song, Shichao and Hu, Mengting and Wang, Xunzhi and Li, Zhiyu and Xiong, Feiyu and Tang, Bo},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2024},
+  pages={5797--5814},
+  year={2024}
+}
+
+@inproceedings{zhou2025socialeval,
+  title={Socialeval: Evaluating social intelligence of large language models},
+  author={Zhou, Jinfeng and Chen, Yuxuan and Shi, Yihan and Zhang, Xuanming and Lei, Leqi and Feng, Yi and Xiong, Zexuan and Yan, Miao and Wang, Xunzhi and Cao, Yaru and others},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={30958--31012},
+  year={2025}
+}
+
+@inproceedings{bai2024compound,
+  title={Is compound aspect-based sentiment analysis addressed by llms?},
+  author={Bai, Yinhao and Han, Zhixin and Zhao, Yuhua and Gao, Hang and Zhang, Zhuowei and Wang, Xunzhi and Hu, Mengting},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages={7836--7861},
+  year={2024}
+}
+

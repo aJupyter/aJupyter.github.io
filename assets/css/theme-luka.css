@@ -132,6 +132,25 @@ body.theme-luka .theme-toggle:hover {
   color: var(--luka-accent);
 }
 
+body.theme-luka .lang-toggle {
+  border: none;
+  background: transparent;
+  color: var(--luka-text);
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-right: 4px;
+}
+
+body.theme-luka .lang-toggle:hover {
+  background: var(--luka-border);
+  color: var(--luka-accent);
+}
+
 body.theme-luka .wrapper {
   width: 100%;
   max-width: 1120px;

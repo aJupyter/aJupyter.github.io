@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>aJupyter - Homepage</title>
-  <meta name="description" content="A minimal academic homepage template for researchers, students, and creators.">
-  <meta name="keywords" content="academic homepage, personal website, portfolio, researcher, student">
+  <meta name="description" content="aJupyter- Graduate student at Nankai University, working on LLM, MLLM and Agentic Systems.">
+  <meta name="keywords" content="aJupyter">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,9 @@
         <a href="./">Home</a>
       </div>
       <div class="nav-right">
+        <button id="langToggle" class="lang-toggle" title="Toggle language" aria-label="Toggle language">
+          <span class="lang-label">中</span>
+        </button>
         <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -37,127 +40,196 @@
     <header class="sidebar">
       <div class="profile-card">
         <a class="image avatar">
-          <img src="assets/img/avatar.svg" alt="Profile avatar">
+          <img src="assets/img/avatar.png" alt="Profile avatar">
         </a>
 
-        <h1 class="site-name">aJupyter (xunzhi)</h1>
-        <!-- <p class="site-email">ajupyter@163.com</p> -->
+        <h1 class="site-name">aJupyter</h1>
 
         <div class="social-icons">
-          <a href="ajupyter@163.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="mailto:ajupyter@163.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=OGOn1iUAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
           <a href="https://github.com/aJupyter" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <!-- <a href="https://www.linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a> -->
-          <a href="https://www.yuque.com/ajupyter/skills" title="Blog"><i class="fa-solid fa-rss"></i></a>
-          <a href="https://ajupytetr.blog.csdn.net/" title="Blog"><i class="fa-solid fa-rss"></i></a>
+          <a href="https://www.yuque.com/ajupyter/skills" title="Yuque"><i class="fa-solid fa-book"></i></a>
+          <a href="https://blog.csdn.net/qq_49821869" title="CSDN"><i class="fa-solid fa-code"></i></a>
         </div>
 
-        <div class="visitor-card">
+        <!-- <div class="visitor-card">
           <div class="visitor-card-title">Visitor Map</div>
           <div class="visitor-card-body">
             Replace this card with your own ClustrMaps image or analytics widget.
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <section class="content">
       <div class="section" id="about">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title"><span class="lang-en">About Me</span><span class="lang-zh">关于我</span></h2>
         <div class="section-body">
-          <p>Hello! I am <strong>Your Name</strong>, a student / researcher / engineer working on topics that matter to you. This template is designed to make personal academic websites clean, readable, and easy to adapt.</p>
-          <p>You can use this section to briefly introduce your background, research interests, and current affiliations. Keep it concise and personal.</p>
-          <p><strong><a href="#" target="_blank" rel="noopener">Download my CV</a></strong> (replace this link with your resume)</p>
+          <p>
+            <span class="lang-en">Hello! I am <strong>aJupyter</strong>, a graduate student at <strong>Nankai University (NKU)</strong>. My research interests include Large Language Models (LLM), Multimodal Large Language Models (MLLM), and Agentic Systems. I am also a high-quality content creator in the field of Artificial Intelligence on CSDN.</span>
+            <span class="lang-zh">你好！我是 <strong>aJupyter</strong>，南开大学在读研究生。研究方向包括大语言模型（LLM）、多模态大语言模型（MLLM）和智能体系统（Agentic System）。我也是 CSDN 人工智能领域优质创作者。</span>
+          </p>
+          <p>
+            <span class="lang-en">Hobbies: Running, playing badminton, taking walks, watching movies.</span>
+            <span class="lang-zh">兴趣爱好：跑步、打羽毛球、散步、看电影。</span>
+          </p>
+          <!-- <p><strong><a href="assets/cv/" target="_blank" rel="noopener"><span class="lang-en">Download my CV</span><span class="lang-zh">下载我的简历</span></a></strong></p> -->
         </div>
       </div>
 
-      <div class="section" id="education">
-        <h2 class="section-title">Education</h2>
+      <!-- <div class="section" id="education">
+        <h2 class="section-title"><span class="lang-en">Education</span><span class="lang-zh">教育背景</span></h2>
         <div class="section-body">
           <div class="card">
             <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
+              <img src="assets/img/institution.svg" alt="Nankai University" class="institution-logo">
               <div class="experience-content">
-                <p class="exp-title"><strong>Your University</strong></p>
-                <p class="exp-detail">B.S. / M.S. / Ph.D. in Your Major</p>
-                <p class="exp-period">2022 - 2026</p>
+                <p class="exp-title"><strong>Nankai University (NKU)</strong></p>
+                <p class="exp-detail"><span class="lang-en">M.S. in Computer Science</span><span class="lang-zh">计算机科学硕士</span></p>
+                <p class="exp-period">2022 - Present</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="experience-item">
+              <img src="assets/img/institution.svg" alt="Nankai University" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Nankai University (NKU)</strong></p>
+                <p class="exp-detail"><span class="lang-en">B.S. in Computer Science</span><span class="lang-zh">计算机科学学士</span></p>
+                <p class="exp-detail"><span class="lang-en"><em>Ranked 1st out of 69 in major</em></span><span class="lang-zh"><em>专业排名 1/69</em></span></p>
+                <p class="exp-period">2019 - 2023</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+      </div> -->
+<!-- 
       <div class="section" id="experience">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title"><span class="lang-en">Experience</span><span class="lang-zh">实习经历</span></h2>
         <div class="section-body">
           <div class="card timeline-item">
             <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
+              <img src="assets/img/institution.svg" alt="ByteDance" class="institution-logo">
               <div class="experience-content">
-                <p class="exp-title"><strong>Research Lab / Company Name</strong></p>
-                <p class="exp-detail">Research Intern / Engineer / Assistant</p>
-                <p class="exp-detail"><em>Advisor:</em> Prof. / Dr. Name</p>
-                <p class="exp-period">2025 - Present</p>
+                <p class="exp-title"><strong>ByteDance Seed</strong></p>
+                <p class="exp-detail"><span class="lang-en">Algorithm Intern</span><span class="lang-zh">大模型算法实习生</span></p>
+                <p class="exp-period">2025.5 - 至今</p>
               </div>
             </div>
           </div>
 
           <div class="card timeline-item">
             <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
+              <img src="assets/img/institution.svg" alt="Alibaba" class="institution-logo">
               <div class="experience-content">
-                <p class="exp-title"><strong>Previous Institution</strong></p>
-                <p class="exp-detail">Research Intern / Teaching Assistant</p>
-                <p class="exp-detail"><em>Advisor:</em> Prof. / Dr. Name</p>
-                <p class="exp-period">2024 - 2025</p>
+                <p class="exp-title"><strong>Alibaba Taotian</strong></p>
+                <p class="exp-detail"><span class="lang-en">Algorithm Intern</span><span class="lang-zh">大模型算法实习生</span></p>
+                <p class="exp-period">2024</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title"><span class="lang-en">Projects</span><span class="lang-zh">开源项目</span></h2>
         <div class="section-body">
           <div class="card project-card">
-            <a href="https://github.com/yourname/project-name">Project Name</a>: A short one-line summary describing what this project does and why it matters.
+            <a href="https://github.com/SmartFlowAI/EmoLLM">EmoLLM</a>: <span class="lang-en">LLM series for mental health counseling</span><span class="lang-zh">面向心理健康辅导的大语言模型系列</span>
+          </div>
+          <div class="card project-card">
+            <a href="https://github.com/aJupyter/ThinkLLM">ThinkLLM</a>: <span class="lang-en">Algorithms and component implementation of LLMs</span><span class="lang-zh">大语言模型算法与组件实现</span>
+          </div>
+          <div class="card project-card">
+            <a href="https://github.com/aJupyter/Awesome-LLM-paper">Awesome-LLM-paper</a>: <span class="lang-en">Curated collection of LLM-related papers</span><span class="lang-zh">LLM 相关论文精选合集</span>
           </div>
         </div>
       </div>
 
-      <div class="section" id="publications">
-        <h2 class="section-title">Publications</h2>
+      <!-- <div class="section" id="publications">
+        <h2 class="section-title"><span class="lang-en">Publications</span><span class="lang-zh">发表论文</span></h2>
         <div class="section-body">
           <div class="publications">
             <ol class="bibliography">
               <li>
                 <div class="pub-row">
                   <div class="pub-content">
-                    <div class="title">Paper Title Goes Here</div>
-                    <div class="author"><strong>Your Name</strong>, Coauthor A, Coauthor B</div>
-                    <div class="periodical"><em><strong>Conference / Journal / arXiv</strong></em></div>
-                    <div class="links">
-                      <a href="#">Paper</a> / <a href="#">Code</a> / <a href="#">Project</a>
-                    </div>
+                    <div class="title">UBench: Benchmarking Uncertainty in Large Language Models with Multiple Choice Questions</div>
+                    <div class="author"><strong>Xunzhi Wang</strong>, Zhuowei Zhang, Gaonan Chen, Qiongyu Li, Bitong Luo, Zhixin Han, Haotian Wang, Hang Gao, Mengting Hu</div>
+                    <div class="periodical"><em><strong>Findings of ACL 2025</strong></em></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Socialeval: Evaluating Social Intelligence of Large Language Models</div>
+                    <div class="author">Jinfeng Zhou, Yuxuan Chen, Yihan Shi, Xuanming Zhang, Leqi Lei, Yi Feng, Zexuan Xiong, Miao Yan, <strong>Xunzhi Wang</strong>, Yaru Cao et al.</div>
+                    <div class="periodical"><em><strong>ACL 2025</strong></em></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Deqa: Descriptions Enhanced Question-Answering Framework for Multimodal Aspect-Based Sentiment Analysis</div>
+                    <div class="author">Zhixin Han, Mengting Hu, Yinhao Bai, <strong>Xunzhi Wang</strong>, Bitong Luo</div>
+                    <div class="periodical"><em><strong>AAAI 2025</strong></em></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Is Compound Aspect-Based Sentiment Analysis Addressed by LLMs?</div>
+                    <div class="author">Yinhao Bai, Zhixin Han, Yuhua Zhao, Hang Gao, Zhuowei Zhang, <strong>Xunzhi Wang</strong>, Mengting Hu</div>
+                    <div class="periodical"><em><strong>Findings of EMNLP 2024</strong></em></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs</div>
+                    <div class="author">Xun Liang, Hanyu Wang, Shichao Song, Mengting Hu, <strong>Xunzhi Wang</strong>, Zhiyu Li, Feiyu Xiong, Bo Tang</div>
+                    <div class="periodical"><em><strong>Findings of ACL 2024</strong></em></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">EmoLLM: Reinventing Mental Health Support with Large Language Models</div>
+                    <div class="author">EmoLLM Team</div>
+                    <div class="periodical"><em><strong>GitHub</strong></em> — <a href="https://github.com/SmartFlowAI/EmoLLM">Code</a></div>
                   </div>
                 </div>
               </li>
             </ol>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="section" id="awards">
-        <h2 class="section-title">Awards</h2>
+        <h2 class="section-title"><span class="lang-en">Awards</span><span class="lang-zh">荣誉</span></h2>
         <div class="section-body">
           <div class="awards-grid">
             <div class="award-item">
               <span class="award-icon">🏅</span>
-              <div class="award-text"><strong>Award Name</strong></div>
+              <div class="award-text"><span class="lang-en"><strong>2nd place worldwide</strong> in the AI track of the Alibaba Global Mathematics Competition (2024)</span><span class="lang-zh"><strong>全球第二名</strong>，阿里全球数学竞赛 AI 赛道（2024）</span></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🏆</span>
+              <div class="award-text"><span class="lang-en"><strong>Top 15 + Creative Application Award</strong>, Shusheng·Puyu Large Model Challenge (2024)</span><span class="lang-zh"><strong>Top 15 + 创意应用奖</strong>，书生·浦语大模型挑战赛（2024）</span></div>
             </div>
             <div class="award-item">
               <span class="award-icon">🥇</span>
-              <div class="award-text"><strong>Competition / Scholarship / Honor</strong></div>
+              <div class="award-text"><span class="lang-en"><strong>Excellent Camper & Teaching Assistant</strong>, Shusheng·Puyu Large Model Practical Camp (2024)</span><span class="lang-zh"><strong>优秀营员 & 优秀助教</strong>，书生·浦语大模型实战营（2024）</span></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🎓</span>
+              <div class="award-text"><span class="lang-en"><strong>Recommended-exempt Master's student</strong>, Outstanding undergraduate graduate, ranked 1st/69 (2022)</span><span class="lang-zh"><strong>硕士推免生</strong>，优秀本科毕业生，专业排名 1/69（2022）</span></div>
             </div>
           </div>
         </div>
@@ -166,7 +238,7 @@
 
     <footer class="site-footer">
       <p>
-        &copy; 2026 Your Name. All rights reserved.
+        &copy; 2026 aJupyter. All rights reserved.
         <br>
         <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
       </p>
@@ -176,6 +248,30 @@
   <script src="assets/js/scale.fix.js"></script>
   <script>
     (function() {
+      // --- Language Toggle ---
+      const langToggle = document.getElementById('langToggle');
+      const langLabel = langToggle.querySelector('.lang-label');
+      const enEls = document.querySelectorAll('.lang-en');
+      const zhEls = document.querySelectorAll('.lang-zh');
+
+      function setLang(lang) {
+        const isZh = lang === 'zh';
+        enEls.forEach(function(el) { el.style.display = isZh ? 'none' : ''; });
+        zhEls.forEach(function(el) { el.style.display = isZh ? '' : 'none'; });
+        langLabel.textContent = isZh ? 'EN' : '中';
+        localStorage.setItem('lang', lang);
+        document.documentElement.lang = lang;
+      }
+
+      const savedLang = localStorage.getItem('lang');
+      setLang(savedLang || 'en');
+
+      langToggle.addEventListener('click', function() {
+        const current = localStorage.getItem('lang') || 'en';
+        setLang(current === 'en' ? 'zh' : 'en');
+      });
+
+      // --- Theme Toggle ---
       const themeToggle = document.getElementById('themeToggle');
       const icon = themeToggle.querySelector('i');
 
@@ -195,6 +291,7 @@
         setTheme(!isDark);
       });
 
+      // --- Entrance Animation ---
       if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
