@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Institution placeholder">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#f3eee7"/>
+  <path d="M32 14 48 21v4c0 10-6 18-16 24C22 43 16 35 16 25v-4Z" fill="#c2714f"/>
+  <path d="M32 23v18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 32h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>
