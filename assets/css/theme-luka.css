@@ -666,6 +666,85 @@ body.theme-luka .pub-content .links a {
   font-weight: 500;
 }
 
+body.theme-luka .cite-note {
+  font-size: 14px;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .cite-highlight {
+  position: relative;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  border: 1px solid var(--luka-accent);
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--luka-shadow), transparent);
+  box-shadow: 0 4px 16px var(--luka-shadow);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+body.theme-luka .cite-highlight:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px var(--luka-shadow);
+}
+
+body.theme-luka .cite-venue-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--luka-accent);
+  border-radius: 999px;
+}
+
+body.theme-luka .cite-title {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--luka-text) !important;
+}
+
+body.theme-luka .cite-title:hover {
+  color: var(--luka-accent) !important;
+}
+
+body.theme-luka .cite-meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .cite-ccfa {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14.5px;
+}
+
+body.theme-luka .cite-ccfa-label {
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--luka-accent);
+  background: var(--luka-border);
+  border-radius: 999px;
+}
+
+body.theme-luka .cite-ccfa a {
+  font-weight: 600;
+}
+
+body.theme-luka .cite-venue {
+  color: var(--luka-secondary);
+  font-size: 13px;
+}
+
 body.theme-luka .awards-grid {
   display: flex;
   flex-direction: column;
