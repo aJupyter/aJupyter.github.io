@@ -474,15 +474,10 @@ body.theme-luka .experience-item:hover {
 body.theme-luka .company-logo-chip {
   display: inline-flex;
   align-items: center;
-  min-height: 22px;
   padding: 7px 12px;
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 1px 4px rgba(61, 57, 41, 0.12);
-  font-size: 14px;
-  font-weight: 600;
-  color: #1f1b16;
-  white-space: nowrap;
 }
 
 body.theme-luka .company-logo {
