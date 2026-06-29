@@ -26,11 +26,13 @@ Hello! I'm aJupyter (Xunzhi), a graduate student at **Nankai University (NKU)**.
 
 ## Experience
 
-| Company | Team & Focus | Period | Role |
-| --- | --- | --- | --- |
-| **Tencent** | Hunyuan LLM Department · Post-training | 2026.5 - Present | Intern (Final Destination) |
-| **ByteDance** | Seed · AI Search & Post-training | 2025.5 - 2026.5 | Intern |
-| **Alibaba** | Future Life Lab · Multi-Agent & Post-training | 2024.12 - 2025.5 | Intern |
+| Company | Team & Focus | Role |
+| --- | --- | --- |
+| **Tencent** | Hunyuan LLM Department · Post-training | Intern (Final Destination) |
+| **ByteDance** | Seed · AI Search & Post-training | Intern |
+| **Alibaba** | Future Life Lab · Multi-Agent & Post-training | Intern |
+| **Shanghai AI Lab** | Multimodal Large Model | Intern |
+| **Zhipu AI** | RAG | Intern |
 
 ## Open Source
 
