@@ -28,6 +28,7 @@ body.theme-luka *::after {
   --luka-social-bg: #ffffff;
   --luka-social-text: #8b7355;
   --luka-footer-border: rgba(194, 113, 79, 0.15);
+  --luka-nav-bg: rgba(250, 249, 247, 0.82);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +42,7 @@ body.theme-luka *::after {
     --luka-social-bg: #22211e;
     --luka-social-text: #d1cec7;
     --luka-footer-border: rgba(226, 138, 103, 0.15);
+    --luka-nav-bg: rgba(26, 25, 23, 0.82);
   }
 }
 
@@ -54,6 +56,7 @@ body.theme-luka *::after {
   --luka-social-bg: #22211e;
   --luka-social-text: #d1cec7;
   --luka-footer-border: rgba(226, 138, 103, 0.15);
+  --luka-nav-bg: rgba(26, 25, 23, 0.82);
 }
 
 [data-theme="light"] {
@@ -66,6 +69,7 @@ body.theme-luka *::after {
   --luka-social-bg: #ffffff;
   --luka-social-text: #8b7355;
   --luka-footer-border: rgba(194, 113, 79, 0.15);
+  --luka-nav-bg: rgba(250, 249, 247, 0.82);
 }
 
 body.theme-luka {
@@ -99,7 +103,9 @@ body.theme-luka .top-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--luka-bg);
+  background: var(--luka-nav-bg);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--luka-footer-border);
   z-index: 1000;
 }
@@ -147,20 +153,67 @@ body.theme-luka .nav-links a:hover {
 }
 
 body.theme-luka .theme-toggle {
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--luka-border);
   background: transparent;
   color: var(--luka-text);
   width: 40px;
   height: 40px;
   border-radius: 999px;
   cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 body.theme-luka .theme-toggle:hover {
   background: var(--luka-border);
+  border-color: var(--luka-accent);
   color: var(--luka-accent);
+}
+
+body.theme-luka .theme-toggle svg.ic {
+  width: 19px;
+  height: 19px;
+}
+
+body.theme-luka .theme-toggle .icon-sun {
+  display: none;
+}
+
+body.theme-luka .theme-toggle .icon-moon {
+  display: block;
+}
+
+html[data-theme="dark"] body.theme-luka .theme-toggle .icon-sun {
+  display: block;
+}
+
+html[data-theme="dark"] body.theme-luka .theme-toggle .icon-moon {
+  display: none;
+}
+
+/* Inline SVG icons (replaces external icon font) */
+body.theme-luka svg.ic {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
+body.theme-luka .social-icons a svg.ic {
+  width: 18px;
+  height: 18px;
+}
+
+body.theme-luka .repo-stars svg.ic-star,
+body.theme-luka .cite-block-head svg.ic-quote {
+  color: var(--luka-accent);
+}
+
+body.theme-luka .cite-block-head svg.ic-quote {
+  margin-right: 4px;
 }
 
 body.theme-luka .wrapper {
@@ -327,6 +380,7 @@ body.theme-luka .content {
 
 body.theme-luka .section {
   margin-bottom: 44px;
+  scroll-margin-top: 84px;
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.45s ease, transform 0.45s ease;
@@ -705,7 +759,7 @@ body.theme-luka .cite-block-head {
   color: var(--luka-secondary);
 }
 
-body.theme-luka .cite-block-head i {
+body.theme-luka .cite-block-head svg.ic {
   color: var(--luka-accent);
   margin-right: 4px;
 }
