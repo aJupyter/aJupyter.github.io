@@ -67,7 +67,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="section-body">
           <p>
-            Hello! I am <strong>aJupyter</strong>, a graduate student at <strong>Nankai University (NKU)</strong>. My research focuses on <strong>foundation models</strong> and their applications (LLMs, VLMs, Agents, etc.), with a particular emphasis on <strong>post-training</strong> (SFT, RL, etc.).
+            Hello! I am <strong>aJupyter</strong>, a graduate student at <strong>Nankai University (NKU)</strong>. My research focuses on <strong>foundation models</strong> and their applications (LLMs, VLMs, Agents, etc.), with a particular emphasis on <strong>post-training</strong> (SFT, RL, etc.). Beyond research, I enjoy running, badminton, leisurely walks, and watching films.
           </p>
           <p class="research-line">
             <span class="research-label">Research Interests</span>
@@ -86,16 +86,14 @@
               <span class="research-tag">Cursor</span>
             </span>
           </p>
-          <p class="research-line">
+          <div class="research-line community-line">
             <span class="research-label">Community</span>
-            <span class="research-tags">
-              <a class="research-tag" href="https://github.com/datawhalechina" target="_blank" rel="noopener">Datawhale</a>
-              <a class="research-tag" href="https://blog.csdn.net/qq_49821869" target="_blank" rel="noopener">CSDN</a>
-            </span>
-          </p>
-          <p>
-            Beyond research, I enjoy running, badminton, leisurely walks, and watching films.
-          </p>
+            <ul class="community-list">
+              <li><a class="community-name" href="https://github.com/datawhalechina" target="_blank" rel="noopener">Datawhale</a> &mdash; open-source community member</li>
+              <li><a class="community-name" href="https://blog.csdn.net/qq_49821869" target="_blank" rel="noopener">CSDN</a> &mdash; Featured Creator in the AI domain</li>
+              <li><a class="community-name" href="https://www.yuque.com/ajupyter" target="_blank" rel="noopener">Yuque</a> &mdash; personal knowledge base</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -321,6 +319,45 @@
         document.querySelectorAll('.section').forEach(function(el) {
           el.classList.add('visible');
         });
+      }
+
+      // --- Nav scroll-spy (highlight the section in view) ---
+      var navMap = Array.prototype.slice
+        .call(document.querySelectorAll('.nav-links a[href^="#"]'))
+        .map(function(link) {
+          return { link: link, section: document.getElementById(link.getAttribute('href').slice(1)) };
+        })
+        .filter(function(m) { return m.section; });
+
+      if (navMap.length) {
+        var spyTicking = false;
+        var updateSpy = function() {
+          spyTicking = false;
+          var offset = 120;
+          var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+          var current = navMap[0];
+          if (atBottom) {
+            current = navMap[navMap.length - 1];
+          } else {
+            for (var i = 0; i < navMap.length; i++) {
+              if (navMap[i].section.getBoundingClientRect().top - offset <= 0) {
+                current = navMap[i];
+              }
+            }
+          }
+          navMap.forEach(function(m) {
+            m.link.classList.toggle('active', m === current);
+          });
+        };
+        var onSpyScroll = function() {
+          if (!spyTicking) {
+            spyTicking = true;
+            window.requestAnimationFrame(updateSpy);
+          }
+        };
+        window.addEventListener('scroll', onSpyScroll, { passive: true });
+        window.addEventListener('resize', onSpyScroll);
+        updateSpy();
       }
 
       // --- GitHub Stars (live, dynamically summed) ---

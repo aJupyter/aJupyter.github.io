@@ -152,6 +152,12 @@ body.theme-luka .nav-links a:hover {
   color: var(--luka-accent);
 }
 
+body.theme-luka .nav-links a.active {
+  background: var(--luka-border);
+  color: var(--luka-accent);
+  font-weight: 600;
+}
+
 body.theme-luka .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -451,6 +457,47 @@ body.theme-luka .research-tag {
 }
 
 body.theme-luka .research-tag:hover {
+  background: var(--luka-accent);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+body.theme-luka .community-line {
+  align-items: flex-start;
+}
+
+body.theme-luka .community-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+body.theme-luka .community-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .community-name {
+  display: inline-block;
+  padding: 3px 11px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--luka-accent);
+  background: var(--luka-border);
+  border: 1px solid var(--luka-border);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+body.theme-luka .community-name:hover {
   background: var(--luka-accent);
   color: #fff;
   transform: translateY(-1px);
